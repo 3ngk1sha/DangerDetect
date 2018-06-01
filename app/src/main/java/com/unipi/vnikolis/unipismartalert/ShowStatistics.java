@@ -398,7 +398,7 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
         Intent maps = new Intent(ShowStatistics.this, MapsActivity.class);
         maps.putExtra("latitude", o.getLatitude());
         maps.putExtra("longitude", o.getLongitude());
-        maps.putExtra("date", o.getDate());
+        maps.putExtra("date", o.getCorrectDate());
         startActivity(maps);
     }
 }

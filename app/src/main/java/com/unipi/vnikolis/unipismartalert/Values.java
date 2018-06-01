@@ -2,7 +2,6 @@ package com.unipi.vnikolis.unipismartalert;
 
 import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -38,6 +37,7 @@ public class Values implements Comparable<Values> {
     public Values(){
     }
 
+
     public void setStateEmergency(String stateEmergency) {
         this.stateEmergency = stateEmergency;
     }
@@ -66,11 +66,16 @@ public class Values implements Comparable<Values> {
         return longitude;
     }
 
+    public String getDate()
+    {
+        return date;
+    }
+
     /**
      * Μέθοδος υπολογισμού ημερομηνίας. Παίρνει την τρέχουσα ημερομηνία η οποία είναι ανάποδα και
      * @return Επιστρέφει την ημερομηνία στην κανονική της μορφή
      */
-    public String getDate(){
+    public String getCorrectDate(){
         @SuppressLint("SimpleDateFormat") DateFormat dateFromString = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         @SuppressLint("SimpleDateFormat") DateFormat dateToString = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date dates = null;

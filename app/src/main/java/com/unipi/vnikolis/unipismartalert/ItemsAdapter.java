@@ -37,7 +37,7 @@ public class ItemsAdapter extends ArrayAdapter<Values> {
 
         // γεμισε τα αντικείμενα με τις τιμες
         assert mondel != null;
-        date.setText(String.valueOf(mondel.getDate()));
+        date.setText(String.valueOf(mondel.getCorrectDate()));
         latitude.setText(mondel.getLatitude());
         longitude.setText(mondel.getLongitude());
         stateEmergency.setText(mondel.getStateEmergency());

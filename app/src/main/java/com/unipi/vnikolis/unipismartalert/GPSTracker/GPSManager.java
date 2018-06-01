@@ -1,4 +1,4 @@
-package com.unipi.vnikolis.unipismartalert;
+package com.unipi.vnikolis.unipismartalert.GPSTracker;
 
 import java.util.List;
 import android.Manifest;
@@ -41,7 +41,7 @@ public class GPSManager implements android.location.GpsStatus.Listener
     private static GPSCallback gpsCallback = null;
     private Context mContext;
     //Constructor
-    GPSManager(Context context) {
+    public GPSManager(Context context) {
         this.mContext=context;
         GPSManager.locationListener = new LocationListener() {
             @Override

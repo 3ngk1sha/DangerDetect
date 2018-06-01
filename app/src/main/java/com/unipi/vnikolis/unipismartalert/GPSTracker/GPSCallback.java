@@ -1,4 +1,4 @@
-package com.unipi.vnikolis.unipismartalert;
+package com.unipi.vnikolis.unipismartalert.GPSTracker;
 
 import android.location.Location;
 

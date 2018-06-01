@@ -113,7 +113,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
                             markerOptions.title(mainActivity.findAddress(MapsActivity.this, coordinates));
                             markerOptions.position(coordinates);
-                            markerOptions.snippet(v.getDate());
+                            markerOptions.snippet(v.getCorrectDate());
                             mMap.addMarker(markerOptions);
                             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coordinates, 2));
                             mMap.animateCamera((CameraUpdateFactory.newLatLngZoom(coordinates, 10)));
