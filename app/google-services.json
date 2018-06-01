@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "310299806175",
+    "firebase_url": "https://unipismartalert-dd27c.firebaseio.com",
+    "project_id": "unipismartalert-dd27c",
+    "storage_bucket": "unipismartalert-dd27c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310299806175:android:4356925a8b673de1",
+        "android_client_info": {
+          "package_name": "com.unipi.vnikolis.unipismartalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310299806175-82prp30da9dtm8jl9kn2o7o63lf32og1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9_hgt6ya1zstUFuUu8tpiU5OshXy2ZTQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

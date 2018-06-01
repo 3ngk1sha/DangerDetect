@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">UnipiSmartAlert</string>
+    <string name="title_activity_login_form">LoginForm</string>
+    <string name="sort_by_date">Sort by Date</string>
+    <string name="abort">abort</string>
+    <string name="sos">SOS</string>
+    <string name="statistics">STATISTICS</string>
+    <string name="confirm">confirm</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="say_something">SAY SOMETHING</string>
+
+    <string-array name="spinnerItems">
+        <item>Select Dangers</item>
+        <item>Drop Danger</item>
+        <item>Light Danger</item>
+        <item>Speed Danger</item>
+        <item>Big Danger</item>
+        <item>Possibly Danger</item>
+    </string-array>
+
+    <string-array name="spinnerItems2">
+        <item>Sort Dates</item>
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="maps">MAP</string>
+
+    <string name="google_maps_key">AIzaSyBZ8UCE3kqeECPhiGDdvZvd7Xwo2gUkaxw</string>
+</resources>
