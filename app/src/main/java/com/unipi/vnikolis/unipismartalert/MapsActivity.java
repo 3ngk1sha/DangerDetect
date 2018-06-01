@@ -153,7 +153,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //εστίαση στο συγκεκριμένο σημείο του χάρτη
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coordinates, 2));
             mMap.animateCamera((CameraUpdateFactory.newLatLngZoom(coordinates, 15)));
-            //
+            //dgfdgsgfsdgsd
         }catch (Exception e){
             e.printStackTrace();
             Log.e("SOS", "Something went wrong");
