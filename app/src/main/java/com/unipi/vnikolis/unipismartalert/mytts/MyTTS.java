@@ -1,4 +1,4 @@
-package com.unipi.vnikolis.unipismartalert;
+package com.unipi.vnikolis.unipismartalert.mytts;
 
 import android.content.Context;
 import android.speech.tts.TextToSpeech;
@@ -15,7 +15,7 @@ public class MyTTS {
     private TextToSpeech tts;
 
     //Constructor
-    MyTTS(Context context)
+    public MyTTS(Context context)
     {
         //με την κλάσση TextToSpeech καλούμε την μέθοδο OnInitListener η οποία ειναι τυπου interface επιστρεφει δηλαδη interface
         TextToSpeech.OnInitListener initListener = new TextToSpeech.OnInitListener() {

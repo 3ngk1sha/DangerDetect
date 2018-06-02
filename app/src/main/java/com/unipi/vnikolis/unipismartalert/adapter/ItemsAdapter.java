@@ -1,4 +1,4 @@
-package com.unipi.vnikolis.unipismartalert;
+package com.unipi.vnikolis.unipismartalert.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.unipi.vnikolis.unipismartalert.R;
+import com.unipi.vnikolis.unipismartalert.model.Values;
+
 import java.util.ArrayList;
 
 /**
@@ -15,7 +19,7 @@ import java.util.ArrayList;
  */
 public class ItemsAdapter extends ArrayAdapter<Values> {
 
-    ItemsAdapter(Context context, ArrayList<Values> values) {
+    public ItemsAdapter(Context context, ArrayList<Values> values) {
         super(context, 0, values);
     }
 

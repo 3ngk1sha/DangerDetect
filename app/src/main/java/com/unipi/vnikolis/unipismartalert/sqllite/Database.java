@@ -1,4 +1,4 @@
-package com.unipi.vnikolis.unipismartalert;
+package com.unipi.vnikolis.unipismartalert.sqllite;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,7 +17,7 @@ public class Database extends SQLiteOpenHelper {
     private static final String TABLE1_NAME = "userCredentials";
     private static final String TABLE2_NAME = "phoneNumbers";
 
-    Database(Context context)
+   public Database(Context context)
     {
         super(context, DATABASE_NAME, null, 1);
         SQLiteDatabase db = this.getWritableDatabase();

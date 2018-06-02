@@ -22,7 +22,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.unipi.vnikolis.unipismartalert.InternetTracker.CheckInternetConnection;
+import com.unipi.vnikolis.unipismartalert.internettracker.CheckInternetConnection;
+import com.unipi.vnikolis.unipismartalert.model.Values;
+import com.unipi.vnikolis.unipismartalert.adapter.ItemsAdapter;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -128,7 +130,6 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
                     dateToCompare = year + "/" + twoDigitMonth + "/" + twoDigitDay;
                     dateToView = twoDigitDay + "/" + twoDigitMonth + "/" + year;
                     dateView.setText(dateToView);
-
                 }
             };
         }catch (Exception e){
@@ -281,7 +282,7 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
                         //εαν υπάρχει διαθέσιμη ημερομηνία από το ημερολόγιο για σύγκριση... κάνε την σύγκριση
                         if (dateToCompare != null) {
                             assert v != null;
-                            compareDate = v.date.substring(0, 10); //πάρε μονο ένα κομάτι από την συμβολοσειρά της ημερομηνίας που είναι αποθηκευμένη στη βάση
+                            compareDate = v.getDate().substring(0, 10); //πάρε μονο ένα κομάτι από την συμβολοσειρά της ημερομηνίας που είναι αποθηκευμένη στη βάση
                             if (compareDate.equals(dateToCompare)) { //και συγκρινέ αυτήν με την ημερομηνία που έχει επιλεγεί από το ημερολόγιο
                                 adapter.add(v); //γέμισε την λίστα
                             }
@@ -295,7 +296,7 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
                     v = i.getValue(Values.class);
                     if (dateToCompare != null) {
                         assert v != null;
-                        compareDate = v.date.substring(0, 10);
+                        compareDate = v.getDate().substring(0, 10);
                         if (compareDate.equals(dateToCompare)) {
                             adapter.add(v);
                         }
@@ -312,7 +313,7 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
                     Collections.sort(dangerList, new Comparator<Values>() {
                         @Override
                         public int compare(Values o1, Values o2) {
-                            return o1.date.compareTo(o2.date);
+                            return o1.getDate().compareTo(o2.getDate());
                         }
                     });
                 } else if (dateSelect.equals("Descending")) {
@@ -320,7 +321,7 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
                     Collections.sort(dangerList, Collections.reverseOrder(new Comparator<Values>() {
                         @Override
                         public int compare(Values o1, Values o2) {
-                            return o1.date.compareTo(o2.date);
+                            return o1.getDate().compareTo(o2.getDate());
                         }
                     }));
                 }

@@ -31,10 +31,13 @@ import android.widget.Toast;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.unipi.vnikolis.unipismartalert.GPSTracker.GPSCallback;
-import com.unipi.vnikolis.unipismartalert.GPSTracker.GPSManager;
-import com.unipi.vnikolis.unipismartalert.InternetTracker.CheckInternetConnection;
-
+import com.unipi.vnikolis.unipismartalert.gpstracker.GPSCallback;
+import com.unipi.vnikolis.unipismartalert.gpstracker.GPSManager;
+import com.unipi.vnikolis.unipismartalert.internettracker.CheckInternetConnection;
+import com.unipi.vnikolis.unipismartalert.model.Values;
+import com.unipi.vnikolis.unipismartalert.mytts.MyTTS;
+import com.unipi.vnikolis.unipismartalert.sms.SendSMS;
+import com.unipi.vnikolis.unipismartalert.sqllite.Database;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -427,7 +430,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 bigDanger.push().setValue(save);
 
                 SendSMS sms = new SendSMS();
-                //sms.SOS_SMS(myDb.getPhones(), longitude, latitude);
+                sms.SOS_SMS(myDb.getPhones(), longitude, latitude);
 
                 LatLng cod = new LatLng(latitude, longitude);
 

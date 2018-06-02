@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.unipi.vnikolis.unipismartalert.sms.SendSMS;
+import com.unipi.vnikolis.unipismartalert.sqllite.Database;
 
 /**
  * The backend code for Login Activity

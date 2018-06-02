@@ -18,7 +18,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.unipi.vnikolis.unipismartalert.InternetTracker.CheckInternetConnection;
+import com.unipi.vnikolis.unipismartalert.internettracker.CheckInternetConnection;
+import com.unipi.vnikolis.unipismartalert.model.Values;
 
 import java.util.Objects;
 

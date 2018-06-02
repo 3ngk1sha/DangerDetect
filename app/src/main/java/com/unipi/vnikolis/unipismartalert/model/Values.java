@@ -1,4 +1,4 @@
-package com.unipi.vnikolis.unipismartalert;
+package com.unipi.vnikolis.unipismartalert.model;
 
 import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
@@ -13,7 +13,7 @@ import java.util.Date;
 
 public class Values implements Comparable<Values> {
 
-     String stateEmergency, latitude, longitude, date;
+     private String stateEmergency, latitude, longitude, date;
 
     /**
      * Constructor used for writing values to FireBase
@@ -21,7 +21,7 @@ public class Values implements Comparable<Values> {
      * @param latitude Γεωγραφικό μήκος
      * @param longitude Γεωγραφικό πλάτος
      */
-    Values(String stateEmergency, String latitude, String longitude)
+   public Values(String stateEmergency, String latitude, String longitude)
     {
         @SuppressLint("SimpleDateFormat") DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
@@ -92,7 +92,7 @@ public class Values implements Comparable<Values> {
      * και μετατροπή στο κατάλληλο φορμάτ
      * @return Ημερομηνία σε Συμβολοσειρά
      */
-    private String getCurrentDate()
+    private String CurrentDate()
     {
         @SuppressLint("SimpleDateFormat") DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
@@ -107,6 +107,6 @@ public class Values implements Comparable<Values> {
     //
     @Override
     public int compareTo(@NonNull Values o) {
-        return getCurrentDate().compareTo(this.date);
+        return CurrentDate().compareTo(this.date);
     }
 }

@@ -1,4 +1,4 @@
-package com.unipi.vnikolis.unipismartalert;
+package com.unipi.vnikolis.unipismartalert.sms;
 
 import android.annotation.SuppressLint;
 import android.telephony.SmsManager;
@@ -15,7 +15,7 @@ public class SendSMS {
      * Μήνυμα SOS
      * @param phones Λίστα τηλεφώνικου καταλόγου παραληπτών
      */
-    protected void SOS_SMS(ArrayList<String> phones, double longitude, double latitude)
+    public void SOS_SMS(ArrayList<String> phones, double longitude, double latitude)
     {
         String textMessage = "Βρίσκομαι στην τοποθεσία με γεωγραφικό μήκος : " + longitude + " και γεωγραφικό πλάτος : " + latitude + " και χρειάζομαι βοήθεια";
         SmsManager smsManager = SmsManager.getDefault();
@@ -31,7 +31,7 @@ public class SendSMS {
      * Μήνυμα ακύρωσης
      * @param phones Λίστα τηλεφώνικου καταλόγου παραληπτών
      */
-    protected void ABORT_SMS(ArrayList<String> phones)
+    public void ABORT_SMS(ArrayList<String> phones)
     {
         SmsManager smsManager = SmsManager.getDefault();
         String textMessage = "Άκυρος ο Συναγερμός. Όλα καλά";
