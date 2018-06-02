@@ -33,6 +33,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.unipi.vnikolis.unipismartalert.GPSTracker.GPSCallback;
 import com.unipi.vnikolis.unipismartalert.GPSTracker.GPSManager;
+import com.unipi.vnikolis.unipismartalert.InternetTracker.CheckInternetConnection;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -23,7 +23,7 @@ public class ItemsAdapter extends ArrayAdapter<Values> {
     @Override
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         // Πάρε τα δεδομένα του αντικειμένου για αυτή τη θέση και αποθηκευσέτα στο μοντέλο Values
-        Values mondel = getItem(position);
+        Values model = getItem(position);
 
         // Τσεκαρε εαν μια υπάρχουσα View έχει ξαναχρησιμοποιηθει, αλλίως γέμισε το View
         if (convertView == null) {
@@ -36,11 +36,11 @@ public class ItemsAdapter extends ArrayAdapter<Values> {
         TextView stateEmergency = convertView.findViewById(R.id.stateEmergency);
 
         // γεμισε τα αντικείμενα με τις τιμες
-        assert mondel != null;
-        date.setText(String.valueOf(mondel.getCorrectDate()));
-        latitude.setText(mondel.getLatitude());
-        longitude.setText(mondel.getLongitude());
-        stateEmergency.setText(mondel.getStateEmergency());
+        assert model != null;
+        date.setText(String.valueOf(model.CorrectDate()));
+        latitude.setText(model.getLatitude());
+        longitude.setText(model.getLongitude());
+        stateEmergency.setText(model.getStateEmergency());
 
         // Επέστρεψε το View για να εμφανιστει στην οθόνη
         return convertView;

@@ -1,4 +1,4 @@
-package com.unipi.vnikolis.unipismartalert;
+package com.unipi.vnikolis.unipismartalert.InternetTracker;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

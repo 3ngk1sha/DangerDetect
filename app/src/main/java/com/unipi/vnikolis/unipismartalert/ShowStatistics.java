@@ -22,6 +22,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.unipi.vnikolis.unipismartalert.InternetTracker.CheckInternetConnection;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -35,7 +37,7 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
     FirebaseDatabase firebaseDatabase;
     DatabaseReference possiblyDanger, bigDanger, lightDanger, speedDanger, dropDanger;
     Spinner mDangerSpinner, mSortDateSpinner;
-    String dangerSelect, dateSelect, twoDigitMonth, twoDigitDay, dateToCompare;
+    String dangerSelect, dateSelect, twoDigitMonth, twoDigitDay, dateToCompare, dateToView;
     TextView dateView;
     DatePickerDialog.OnDateSetListener mDateSetListener;
     ArrayList<Values> dangerList = new ArrayList<>();
@@ -124,7 +126,8 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
                         twoDigitDay = String.valueOf(dayOfMonth);
                     }
                     dateToCompare = year + "/" + twoDigitMonth + "/" + twoDigitDay;
-                    dateView.setText(dateToCompare);
+                    dateToView = twoDigitDay + "/" + twoDigitMonth + "/" + year;
+                    dateView.setText(dateToView);
 
                 }
             };
@@ -398,7 +401,7 @@ public class ShowStatistics extends AppCompatActivity implements AdapterView.OnI
         Intent maps = new Intent(ShowStatistics.this, MapsActivity.class);
         maps.putExtra("latitude", o.getLatitude());
         maps.putExtra("longitude", o.getLongitude());
-        maps.putExtra("date", o.getCorrectDate());
+        maps.putExtra("date", o.CorrectDate());
         startActivity(maps);
     }
 }

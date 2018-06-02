@@ -75,7 +75,7 @@ public class Values implements Comparable<Values> {
      * Μέθοδος υπολογισμού ημερομηνίας. Παίρνει την τρέχουσα ημερομηνία η οποία είναι ανάποδα και
      * @return Επιστρέφει την ημερομηνία στην κανονική της μορφή
      */
-    public String getCorrectDate(){
+    public String CorrectDate(){
         @SuppressLint("SimpleDateFormat") DateFormat dateFromString = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         @SuppressLint("SimpleDateFormat") DateFormat dateToString = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date dates = null;

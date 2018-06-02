@@ -18,6 +18,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.unipi.vnikolis.unipismartalert.InternetTracker.CheckInternetConnection;
 
 import java.util.Objects;
 
@@ -113,7 +114,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
                             markerOptions.title(mainActivity.findAddress(MapsActivity.this, coordinates));
                             markerOptions.position(coordinates);
-                            markerOptions.snippet(v.getCorrectDate());
+                            markerOptions.snippet(v.CorrectDate());
                             mMap.addMarker(markerOptions);
                             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coordinates, 2));
                             mMap.animateCamera((CameraUpdateFactory.newLatLngZoom(coordinates, 10)));
