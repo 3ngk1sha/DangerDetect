@@ -7,10 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 import com.unipi.vnikolis.unipismartalert.R;
 import com.unipi.vnikolis.unipismartalert.model.Values;
-
 import java.util.ArrayList;
 
 /**

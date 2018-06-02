@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private static final int MAX_SPEED = 30; //----------------------------> ειναι 80
     private static final int MAX_LIGHT = 1450; //----------------------------> ειναι 1500
 
-    MediaPlayer mp;
+    private MediaPlayer mp;
 
     int accelerationBlocker, lightBlocker, speedBlocker;
 

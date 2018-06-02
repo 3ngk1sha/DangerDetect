@@ -23,11 +23,11 @@ import android.widget.Toast;
  * Check device's GPS settings and selecting the best provider
  *
  * gpsManager = new GPSManager(MainActivity.this);
-   gpsManager.startListening(getApplicationContext());
+   gpsManager.startListening(MainActivity.this);
    gpsManager.setGPSCallback(this); ------> χρησιμοποιούμε αυτές τις εντολές στην onCreate()
  * για να χρησιμοποιήσουμε την κλάσση
 
- * gpsManager.startListening(getApplicationContext());
+ * gpsManager.startListening(MainActivity.this);
    gpsManager.setGPSCallback(this); ------> και αυτές για τα υπόλοιπα
  *
  */
