@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:onClick="GoToMaps"
-                android:text="@string/maps" />
+                android:text="@string/markers_of_drop_danger" />
 
         </LinearLayout>
     </ScrollView>

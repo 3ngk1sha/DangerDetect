@@ -430,7 +430,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 bigDanger.push().setValue(save);
 
                 SendSMS sms = new SendSMS();
-                sms.SOS_SMS(myDb.getPhones(), longitude, latitude);
+                //sms.SOS_SMS(myDb.getPhones(), longitude, latitude);
 
                 LatLng cod = new LatLng(latitude, longitude);
 
