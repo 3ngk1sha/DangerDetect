@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public static double latitudeForSpeed, longitudeForSpeed, latitude, longitude;
 
     private static final int MAX_ACCELERATION = 50; //----------------------------> ειναι 50
-    private static final int MAX_SPEED = 30; //----------------------------> ειναι 80
-    private static final int MAX_LIGHT = 1450; //----------------------------> ειναι 1500
+    private static final int MAX_SPEED = 80; //----------------------------> ειναι 80
+    private static final int MAX_LIGHT = 1400; //----------------------------> ειναι 1400
 
     private MediaPlayer mp;
 
@@ -430,7 +430,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 bigDanger.push().setValue(save);
 
                 SendSMS sms = new SendSMS();
-                //sms.SOS_SMS(myDb.getPhones(), longitude, latitude);
+                sms.SOS_SMS(myDb.getPhones(), longitude, latitude);
 
                 LatLng cod = new LatLng(latitude, longitude);
 
