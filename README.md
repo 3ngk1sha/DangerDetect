@@ -6,7 +6,7 @@
 
 # Android Application
 
-Auto Detect a drop of the smartPhone. 
+Auto Detect a drop of a smartPhone. 
 Auto Detect high solar Radiation. 
 Auto Detect high vehicle speed.
 Button for an emergency call (Sending SOS message with longitude and latitude, and updating the firebase).
