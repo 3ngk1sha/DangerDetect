@@ -423,7 +423,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             //εαν υπάρχει σύνδεση στο NET
             if (CheckInternetConnection.isConnected(MainActivity.this) && CheckInternetConnection.isConnectedFast(MainActivity.this)) {
                 isSOSPressed = true;
-                help.append("Βρίσκομαι στην τοποθεσία με γεωγραφικό μήκος : ").append(longitude).append(" και γεωγραφικό πλάτος : ").append(latitude).append(" και χρειάζομαι βοήθεια");
+                    help.append("Tôi đang ở vị trí có kinh độ : ").append(longitude).append(" và vĩ độ\n : ").append(latitude).append(" và tôi cần giúp đỡ\n");
                 Toast.makeText(MainActivity.this, help, Toast.LENGTH_LONG).show();
 
                 Values save = new Values(help.toString(), String.valueOf(latitude), String.valueOf(longitude));

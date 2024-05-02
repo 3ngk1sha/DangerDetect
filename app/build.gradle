@@ -31,5 +31,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:16.0.1'
     implementation 'com.github.sillebille:dynamic-calendar:1.0.1'
     implementation 'com.dubsmash.volley:library:2.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+
+
 }
 apply plugin: 'com.google.gms.google-services'

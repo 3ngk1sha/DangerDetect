@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UnipiSmartAlert.iml" filepath="$PROJECT_DIR$/UnipiSmartAlert.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Smart-Alert-Application.iml" filepath="$PROJECT_DIR$/.idea/modules/Smart-Alert-Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Smart-Alert-Application.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Smart-Alert-Application.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Smart-Alert-Application.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Smart-Alert-Application.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Smart-Alert-Application.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Smart-Alert-Application.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Smart-Alert-Application.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Smart-Alert-Application.app.unitTest.iml" />
     </modules>
   </component>
 </project>

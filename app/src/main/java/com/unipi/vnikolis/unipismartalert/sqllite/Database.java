@@ -31,8 +31,8 @@ public class Database extends SQLiteOpenHelper {
             db.execSQL("INSERT INTO " + TABLE1_NAME + "(UserName, Password) VALUES ('vaggelis', '123')");
 
             db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE2_NAME + "(ID INTEGER PRIMARY KEY AUTOINCREMENT , PhoneNumber TEXT)");
-            db.execSQL("INSERT INTO " + TABLE2_NAME + "(PhoneNumber) VALUES ('6976004823')");
-            db.execSQL("INSERT INTO " + TABLE2_NAME + "(PhoneNumber) VALUES ('6949861465')");
+            db.execSQL("INSERT INTO " + TABLE2_NAME + "(PhoneNumber) VALUES ('0827982175')");
+            //db.execSQL("INSERT INTO " + TABLE2_NAME + "(PhoneNumber) VALUES ('0352912366')");
         }catch (Exception e){
             e.printStackTrace();
         }

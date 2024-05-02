@@ -17,7 +17,7 @@ public class SendSMS {
      */
     public void SOS_SMS(ArrayList<String> phones, double longitude, double latitude)
     {
-        String textMessage = "Βρίσκομαι στην τοποθεσία με γεωγραφικό μήκος : " + longitude + " και γεωγραφικό πλάτος : " + latitude + " και χρειάζομαι βοήθεια";
+        String textMessage = "Tôi đang ở vị trí có kinh độ : " + longitude + " và vĩ độ : " + latitude + " và tôi cần giúp đỡ\n";
         SmsManager smsManager = SmsManager.getDefault();
         ArrayList<String> parts =smsManager.divideMessage(textMessage);
 
@@ -34,7 +34,7 @@ public class SendSMS {
     public void ABORT_SMS(ArrayList<String> phones)
     {
         SmsManager smsManager = SmsManager.getDefault();
-        String textMessage = "Άκυρος ο Συναγερμός. Όλα καλά";
+        String textMessage = "Báo động không hợp lệ. Tất cả đều tốt";
         for(String number : phones)
         {
             smsManager.sendTextMessage(number,null,textMessage,null,null);
